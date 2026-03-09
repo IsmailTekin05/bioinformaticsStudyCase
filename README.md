@@ -16,6 +16,8 @@ long_read_qc_pipeline/
 ## How to Run the Pipeline
 *Note:* The `data\input.fastq` file has dummy data in it. Before running the pipline
 make sure the correct data has been replaced.
+On the same way the `results` folder has the results of that dummy data. So, make sure
+the `results` is empty or make sure you saved the previous data to somewhere else.
 
 1. **Build the Docker Image:**
    Navigate to the repository root and run:
