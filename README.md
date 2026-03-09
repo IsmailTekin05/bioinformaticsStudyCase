@@ -12,7 +12,7 @@ make sure the correct data has been replaced.
 
 2. **Run the Pipeline:**
    Mount your current directory to the container and run Snakemake:
-   `docker run -v $(pwd):/workspace long_read_qc snakemake --cores 1`
+   `docker run -v "${PWD}:/workspace" long_read_qc snakemake --cores 1`
 
 3. **View Results:**
    Check the `results/` folder for the CSV file, PNG graphs, and summary statistics.
