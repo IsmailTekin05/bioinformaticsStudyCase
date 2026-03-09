@@ -1,0 +1,65 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count
+-----------------  -------
+all                      1
+analyze_reads            1
+run_nanoplot             1
+visualize_metrics        1
+total                    4
+
+Select jobs to execute...
+
+[Mon Mar  9 14:44:33 2026]
+rule run_nanoplot:
+    input: data/input.fastq
+    output: results/nanoplot_output/NanoPlot-report.html
+    jobid: 1
+    reason: Missing output files: results/nanoplot_output/NanoPlot-report.html
+    resources: tmpdir=/tmp
+
+[Mon Mar  9 14:45:00 2026]
+Finished job 1.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Mon Mar  9 14:45:00 2026]
+rule analyze_reads:
+    input: data/input.fastq
+    output: results/read_metrics.csv
+    jobid: 2
+    reason: Missing output files: results/read_metrics.csv
+    resources: tmpdir=/tmp
+
+[Mon Mar  9 14:45:01 2026]
+Finished job 2.
+2 of 4 steps (50%) done
+Select jobs to execute...
+
+[Mon Mar  9 14:45:01 2026]
+rule visualize_metrics:
+    input: results/read_metrics.csv
+    output: results/gc_content_dist.png, results/read_length_dist.png, results/mean_quality_dist.png, results/summary_statistics.txt
+    jobid: 3
+    reason: Missing output files: results/read_length_dist.png, results/gc_content_dist.png, results/summary_statistics.txt, results/mean_quality_dist.png; Input files updated by another job: results/read_metrics.csv
+    resources: tmpdir=/tmp
+
+[Mon Mar  9 14:45:06 2026]
+Finished job 3.
+3 of 4 steps (75%) done
+Select jobs to execute...
+
+[Mon Mar  9 14:45:06 2026]
+localrule all:
+    input: results/nanoplot_output/NanoPlot-report.html, results/read_metrics.csv, results/gc_content_dist.png, results/read_length_dist.png, results/mean_quality_dist.png, results/summary_statistics.txt
+    jobid: 0
+    reason: Input files updated by another job: results/nanoplot_output/NanoPlot-report.html, results/summary_statistics.txt, results/read_metrics.csv, results/read_length_dist.png, results/mean_quality_dist.png, results/gc_content_dist.png
+    resources: tmpdir=/tmp
+
+[Mon Mar  9 14:45:06 2026]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: .snakemake/log/2026-03-09T144433.055601.snakemake.log
