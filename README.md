@@ -25,17 +25,17 @@ make sure the correct data has been replaced.
 
 Dear Professor Kılıç,
 
-I have finished running the initial Quality Control (QC) analysis on the raw long-read sequencing data you provided. I built a reproducible pipeline that extracts the essential metrics and generates visual graphs so we can easily see the overall health of the run.
+I have finished the Quality Control analysis on the read sequencing data you gave me. I made a pipeline that gets the numbers and makes graphs so we can see how the run went.
 
 **Summary of the Data:**
-* **Read Lengths:** The read length distribution graph shows that the data behaves as expected for a long-read run. The mean and median lengths indicate we successfully captured long fragments, which is exactly what we want for this technology.
-* **Quality Scores:** The mean read quality scores are centered around an acceptable threshold for long-read data. While long reads typically have slightly lower raw accuracy compared to short reads, the distribution here indicates the sequencing run was healthy and the quality is sufficient.
-* **GC Content:** The GC content distribution forms a clean curve matching the expected biological profile of our target organism, indicating minimal contamination.
+* **Read Lengths:** The graph of read lengths looks like it should for a read run. The average and middle lengths show we got the pieces we wanted.
+* **Quality Scores:** The average quality scores are good enough for read data. Long reads are not always as accurate as reads but the graph shows the run was good and the quality is fine.
+* **GC Content:** The GC content graph looks like it should for the organism we are studying. There is not much contamination.
 
 **Recommendation:**
-Based on these QC metrics, the read lengths are as expected, and the quality is sufficient. I highly recommend that we proceed to the full alignment step. 
+Based on these numbers the read lengths are what we expected. The quality is good enough. I think we should go on to the step.
 
-All graphs and summary statistics have been saved in our shared directory for your review. Please let me know if you would like to look over them together before I start the alignment!
+I saved all the graphs and numbers, in our shared folder for you to look at. Do you want to go over them with me before I start the part?
 
 Best regards,
 İsmail Tekin
