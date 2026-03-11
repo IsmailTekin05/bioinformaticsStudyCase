@@ -1,9 +1,9 @@
 Summary Statistics for Long-Read QC
 ===================================
 
-Mean Read Length: 4979.85 bp
-Median Read Length: 5016.00 bp
-Mean Quality Score: 17.50
-Median Quality Score: 17.50
-Mean GC Content: 49.70%
-Median GC Content: 49.64%
+Mean Read Length: 1038.24 bp
+Median Read Length: 547.00 bp
+Mean Quality Score: 17.90
+Median Quality Score: 17.31
+Mean GC Content: 53.00%
+Median GC Content: 53.53%

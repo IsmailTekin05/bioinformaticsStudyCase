@@ -9,7 +9,7 @@ rule all:
 
 rule run_nanoplot:
     input:
-        "data/input.fastq"
+        "data/barcode77.fastq"
     output:
         "results/nanoplot_output/NanoPlot-report.html"
     shell:
@@ -19,7 +19,7 @@ rule run_nanoplot:
 
 rule analyze_reads:
     input:
-        "data/input.fastq"
+        "data/barcode77.fastq"
     output:
         "results/read_metrics.csv"
     shell:
